@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!--/ /---- Put your name in the title of the page ----/ /-->
+	<title>C Panshul Reddy | Portfolio</title>
+	
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
+	<meta name="description" content="A clean portfolio showcasing projects in web and cloud, plus how I build and ship reliable software.">
+
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<!-- Small style overrides so the new Google Fonts apply without changing styles.css -->
+	<style>
+		body { font-family: Inter, Georgia, serif; }
+		h1, h2, h3, h4, nav { font-family: "Playfair Display", Arial, serif; }
+	</style>
+	
+    <!-- ------------------------------------------------------
+    The site is designed to be mobile first. The wrapper elements
+	are in place for when you get to desktop size to contain the 
+	content.
+    ------------------------------------------------------- -->
+    
+	<header class="primary">
+        <div class="wrapper">
+            
+			<div class="logo-container">
+				<h1>C Panshul<br>Reddy<br>Portfolio</h1>
+
+				<!-- ------------------------------------------------------
+				Note that the image of the logo is linked to the home page.
+				------------------------------------------------------- -->
+				<a href="index.html"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=350&q=80" alt="Abstract logo-style image" id="logo"></a>
+			</div>
+            
+            
+			<!-- ------------------------------------------------------
+            The navigation here is linking to the sections further down
+            the page.
+            ------------------------------------------------------- -->
+			<nav id="mainnav">
+            	<ul>
+                	<li><a href="#work">Work</a></li>
+                    <li><a href="#about-contact">About</a></li>
+                    <li><a href="#about-contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    
+    <!-- ------------------------------------------------------
+    This is the work section, which has two parts: the featured
+	section and the projects section.
+    ------------------------------------------------------- -->
+    
+    <section id="work">
+   		<div class="wrapper">
+			<h2>Selected Projects</h2>
+        	<section class="featured">
+                <article>
+                	<!-- ------------------------------------------------------
+                    Link the image below to the detail page for this project.
+                    Use the page.html file to make that page. Also link the 
+                    anchor tag in the paragraph below to the same page.
+                    ------------------------------------------------------- -->
+					<a href="#"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Team collaborating around a laptop"></a>
+                </article>
+                
+                <article>
+					<h3>Serverless Object Storage Uploader</h3>
+					<h4>Challenge: ship a simple, reliable upload pipeline</h4>
+					<p>I built a small service that uploads files to an object store, validates inputs, and returns a clean URL for retrieval. The goal was to keep the API minimal, make errors understandable, and keep the implementation easy to extend (auth, metadata, and lifecycle rules).</p>
+					<p><a href="#">See the approach and key tradeoffs</a></p> 
+                </article>
+            </section> <!-- end row -->
+            
+            
+            <!-- ------------------------------------------------------
+            The projects section is for additional projects. I put four in
+			here, but it could be more, or less. You just have to pay
+			attention to how they wrap, and how many you want per row.
+            
+            Note that each image should be linked to the page with more
+            detailed information about that project. You can use a copy of
+            page.html to create those pages.
+            ------------------------------------------------------- -->
+            
+            <section class="projects">
+            
+            	<article>
+	                	<h3>Function-as-a-Service Demo</h3>
+	                	<a href="#"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=80" alt="Code editor on a screen"></a>
+	                    <p><strong>Role:</strong> Developer</p>
+	                    <p><strong>Description:</strong> A lightweight FaaS-style handler that takes an input event, runs business logic, and returns structured output with clear error handling.</p>
+                </article>
+                
+                <article>
+	                	<h3>Supabase Object Store Integration</h3>
+	                	<a href="#"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=80" alt="Abstract matrix-style security visual"></a>
+	                    <p><strong>Role:</strong> Developer</p>
+	                    <p><strong>Description:</strong> Connects to storage, uploads assets, and standardizes naming so downloads are predictable and easy to automate.</p>
+                </article>
+                
+                <article>
+	                	<h3>API Testing & Documentation</h3>
+	                	<a href="#"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Dashboard charts and analytics"></a>
+	                    <p><strong>Role:</strong> Developer</p>
+	                    <p><strong>Description:</strong> A repeatable checklist + examples for validating endpoints, edge cases, and response formats so changes don’t break consumers.</p>
+                </article>
+				
+				<article>
+	                	<h3>Portfolio Website (This Site)</h3>
+	                	<a href="#"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Laptop with code on screen"></a>
+	                    <p><strong>Role:</strong> Designer/Developer</p>
+	                    <p><strong>Description:</strong> A simple, mobile-first portfolio that highlights work clearly and makes it easy to contact me.</p>
+                </article>
+            
+            </section><!-- end row -->
+            
+        </div> <!-- end work wrapper -->
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    This is the about and contact section. The links in the main
+    navigation link to this section. 
+    ------------------------------------------------------- -->
+    
+    <section id="about-contact" class="secondary">
+   		<div class="wrapper">
+        	
+			<div class="profile-photo">
+	            	<img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=520&q=80" alt="Portrait-style photo placeholder">
+            </div>
+			
+            <article>
+				<h2>About Me</h2>
+				<p>I’m a developer focused on building practical web and cloud projects: small services, storage-backed apps, and clean interfaces. I like work that is measurable, well-documented, and easy to maintain.</p>
+				<h3>Skills</h3>
+				<p><strong>Core:</strong> Python, HTTP APIs, Git, HTML/CSS<br>
+				<strong>Cloud:</strong> Object storage concepts, serverless patterns, authentication basics<br>
+				<strong>Currently learning:</strong> deployment workflows, observability, and stronger security defaults</p>
+			</article> 
+                
+			<article>
+				<h2>Contact Me!</h2>
+				<p>Want to collaborate or review one of my projects? The fastest way to reach me is email. You can also find me on the platforms below.</p>
+
+				<!-- ------------------------------------------------------
+				Be sure to encode your email address at this site, so you 
+				don't get spam. http://wbwip.com/wbw/emailencoder.html
+				------------------------------------------------------- -->
+
+				<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:c.panshul.reddy@gmaiul.com">c.panshul.reddy@gmaiul.com</a><br>
+				<i class="fa fa-phone" aria-hidden="true"></i> 6362906701</p>
+
+				<!-- ------------------------------------------------------
+				You can see here that I have included font-awesome. It is used
+				to create the icons above and below. You can go to the font-awesome
+				website to see the available icons and swap some out.
+				------------------------------------------------------- -->
+
+				<p class="social">
+					<a href="#" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+					<a href="#" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+					<a href="#" aria-label="X (Twitter) profile"><i class="fab fa-twitter-square"></i></a>
+				</p>
+			</article>
+                   
+        </div>
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    The footer section is not doing much on this page. Add more
+    content if necessary.
+    ------------------------------------------------------- -->
+    <footer class="primary">
+    	<div class="wrapper">
+	        	<p class="centered">&copy; 2026 C Panshul Reddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
